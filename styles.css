@@ -5,6 +5,44 @@ h1, h2, p {
 
 body {
     background-image: url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg);
+    font-family: sans-serif;
+
+    padding: 20px;
+}
+
+h1, h2 {
+    font-family: Impact, serif; /* second font after comma is the fall back font */
+}
+
+h1 {
+    font-size: 40px;
+
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+img {
+    display: block;
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -25px; /* negative margin since 0px is not enough */
+}
+
+hr {
+    height: 2px; /* changing the height of the divider line */
+    background-color: brown;
+
+    border-color: brown;
+    border-width: 2px;
+}
+
+.established {
+    font-style: italic;
 }
 
 
@@ -14,20 +52,56 @@ body {
 
     margin-left: auto;
     margin-right: auto;
+
+    padding: 20px; /*giving space between content and the sides using padding properties */
+    max-width: 500px; /* prevents from contents from being too wide */
 }
 
 /* This is how you make comments on css */
 
-.flavor {
+.flavor, .dessert {
     text-align: left;
-    width: 50%;
+    width: 75%;
 }
 
 .price {
     text-align: right;
-    width: 50%;
+    width: 25%;
 }
 
 .item p {
     display: inline-block;
+
+    margin-top: 5px;
+    margin-bottom: 5px;
+
+    font-size: 18px;
+}
+
+.bottom-line {
+    margin-top: 25px;
+}
+
+
+/* FOOTER */
+footer {
+    font-size: 14px;
+}
+
+a {
+    color: black;
+}
+
+a:visited { /* pseudo selector when link is visited it is this color */
+    color: black;
+}
+a:hover {
+    color: brown;
+}
+a:active { /* when clicked it turns white holds it white until released click */
+    color: brown;
+}
+
+.address {
+    margin-bottom: 5px;
 }
